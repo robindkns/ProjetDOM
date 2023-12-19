@@ -1,0 +1,93 @@
+.services
+    height: 1200px
+    background-color: #F9F8FE
+    padding-top: 6%
+    display: flex
+    align-items: center
+    flex-direction: column  
+    color: #444444
+    font-weight: 500
+
+
+#h2Service
+    width: 3%
+    display: flex
+    justify-content: center
+    margin-bottom: 0px
+    padding-bottom: 1%
+    font-size: 30px
+    font-weight: bolder
+    color: #444444
+    border-bottom: 3px solid #5846F9
+
+#pService
+    padding-top: 2%
+    text-align: center
+    width: 90%
+    font-weight: 500
+
+.gridService
+    margin-top: 2%
+    display: grid
+    grid-template-columns: auto auto auto
+    gap: 5%
+    width: 90%
+
+.service
+    background-color: white
+    width: 100%
+    height: 400px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+
+#logoService
+    margin-bottom: 13%
+
+#pService2
+    width: 90%
+
+#spanService
+    color: #2D4964
+    font-weight: bolder
+    font-size: 25px
+    padding-bottom: 2%
+
+@media ( max-width: 1439px )
+    
+    #spanService
+        font-size: 20px
+
+    #pService2
+        font-size: 14px
+
+@media ( max-width: 1023px )
+
+    .services
+        height: 1600px
+
+    .service
+        height: 300px
+
+    .gridService
+        grid-template-columns: auto auto
+        gap: 1%
+
+@media ( max-width: 767px )
+    
+    #h2Service
+        font-size: 25px
+
+    #pService
+        font-size: 14px
+
+    .services 
+        height: 2300px
+        padding-top: 15%
+
+    .gridService
+        grid-template-columns: auto
+        width: 80%
+        gap: 2%

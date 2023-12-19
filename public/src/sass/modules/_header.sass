@@ -1,0 +1,177 @@
+header
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../img/hero-bg.jpg) center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+    color: white
+    height: 800px
+
+nav
+    background-color: transparent
+    position: absolute
+    z-index: 1
+    display: flex
+    width: 100%
+    padding-top: 2%
+    justify-content: space-around
+    align-items: center
+    font-size: 17px
+    font-weight: bold
+    color: white
+    height: 90px
+
+.navDiv
+    display: flex
+    gap: 5%
+    align-items: center
+    width: 50%
+    justify-content: flex-start
+
+.navUL
+    list-style-type: none
+    margin: 0px
+    padding: 0px
+    display: flex
+    gap: 5%
+    width: 60%
+    justify-content: center
+    li a
+        text-decoration: none
+        color: #ffffff9e
+        &:hover
+            color: #ffffff
+
+#btnNav
+    border: 2px solid #ffffff9e
+    background-color: transparent
+    border-radius: 6px
+    color: #ffffff
+    font-weight: bold
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    &:hover
+        border: 2px solid white
+
+#spanNav
+    width: 50%
+    padding-left: 5%
+    font-size: 28px
+    font-weight: normal
+    letter-spacing: 2px
+
+.divContainerHeader
+    width: 30%
+
+.headerContainer
+    display: flex
+    width: 100%
+    padding-top: 12%
+    justify-content: center
+    align-items: center
+    font-size: 48px
+    font-weight: bolder
+
+.imgHeader
+    width: 30%
+    animation: float ease-in-out 5s infinite
+
+#btnContainer
+    font-size: 18px
+    font-weight: bold
+    background-color: transparent
+    color: white
+    border: 2px solid white
+    background-color: transparent
+    border-radius: 6px
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    &:hover
+        background-color: white
+        color: #613CEA
+
+@keyframes float
+    0%
+        translate: 0% 0%
+    50%
+        translate: 0% 6%
+    100%
+        translate: 0% 0%
+
+
+@media ( max-width: 1439px )
+    header
+        height: 700px
+    
+    .headerContainer
+        font-size: 38px
+        padding-top: 20%
+        gap: 5%
+    
+    nav
+        font-size: 14px
+
+    #spanNav
+        width: 40%
+    
+    .navDiv
+        width: 60%
+
+@media ( max-width: 1023px )
+    header
+        height: 600px
+    
+    nav
+        height: 70px
+        font-size: 11px
+
+    .headerContainer
+        font-size: 32px
+        padding-top: 25%
+        gap: 5%
+    
+    #spanNav
+        width: 30%
+    
+    .navDiv
+        width: 70%
+        gap: 2%
+        justify-content: center
+
+    #btnContainer
+        font-size: 16px
+
+@media ( max-width: 767px )
+    header
+        height: 500px
+
+    .headerContainer
+        font-size: 20px
+        padding-top: 40%
+        gap: 5%
+    .imgHeader
+        width: 40%
+
+    #btnContainer
+        font-size: 12px
+        width: 75%
+        padding-left: 7px
+        padding-right: 7px
+        padding-top: 4px
+        padding-bottom: 4px
+
+    #btnNav
+        font-size: 12px
+        width: 75%
+        padding-left: 7px
+        padding-right: 7px
+        padding-top: 4px
+        padding-bottom: 4px
+
+    #spanNav
+        font-size: 20px
+
+    nav 
+        height: 60px

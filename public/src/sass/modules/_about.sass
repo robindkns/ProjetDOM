@@ -1,0 +1,102 @@
+.about
+    height: 750px
+    width: 100%
+    display: flex
+    justify-content: center
+    padding-top: 9%
+
+
+.txtAbout
+    width: 50%
+    #subTitle
+        font-style: italic
+    p i
+            border: 1.5px solid #613CEA
+            border-radius: 50%
+            padding: 0.5%
+            font-size: 13px
+            font-weight: bolder
+
+.divAbout
+    display: flex
+    justify-content: center
+    width: 90%
+    gap: 2%
+
+#imgAbout
+    width: 50%
+    height: 500px
+
+#btnAbout
+    background: linear-gradient(45deg, rgba(86, 58, 250, 0.9), rgba(116, 15, 214, 0.9))
+    border: none
+    color: white
+    padding-top: 10px
+    padding-left: 30px
+    padding-right: 30px
+    padding-bottom: 10px
+    border-radius: 6px
+    font-weight: bolder
+    font-size: 20px
+    &:hover
+        background: linear-gradient(45deg, rgba(116, 15, 214, 0.9), rgba(86, 58, 250, 0.9))
+
+@media ( max-width: 1439px)
+    #imgAbout
+        height: 330px
+
+    #h2About
+        font-size: 30px
+
+    #subTitle    
+        font-size: 14px
+
+    #pAbout
+        font-size: 14px
+
+    .about
+        height: 550px
+
+    #btnAbout
+        font-size: 16px
+
+@media ( max-width: 1023px )
+
+    .about
+        height: 450px
+    
+    .divAbout
+        height: 350px
+
+    #imgAbout
+        height: 250px
+
+    #subTitle
+        font-size: 12px
+        margin-bottom: 0px
+    
+    #pAbout
+        font-size: 12px
+
+    #h2About
+        font-size: 20px
+
+    #btnAbout
+        font-size: 12px
+
+@media ( max-width: 767px )
+    .about
+        height: 700px
+
+    .divAbout
+        height: 650px
+        flex-direction: column
+
+    .txtAbout
+        order: 1
+        width: 100%
+
+    #imgAbout
+        height: 250px
+        order: 0
+        width: 100%
