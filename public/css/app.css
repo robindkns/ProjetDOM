@@ -22259,6 +22259,30 @@ h2, .h2 {
   font-family: "Poppins", sans-serif;
 }
 
+.techBtn {
+  font-family: "Poppins", sans-serif;
+}
+
+.spanTech {
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitleTech {
+  font-family: "Poppins", sans-serif;
+}
+
+.titleTech {
+  font-family: "Poppins", sans-serif;
+}
+
+.switchSpan {
+  font-family: "Poppins", sans-serif;
+}
+
+.spanTopPricing {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   background: linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%), url(../img/hero-bg.jpg) center center no-repeat;
   background-attachment: fixed;
@@ -22699,7 +22723,7 @@ nav {
 }
 @media (max-width: 1023px) {
   .services {
-    height: 1600px;
+    height: 1200px;
   }
   .service {
     height: 300px;
@@ -22757,6 +22781,7 @@ nav {
   width: 90%;
   justify-content: center;
   margin-top: 1%;
+  padding-bottom: 5%;
 }
 
 .feat {
@@ -22794,6 +22819,361 @@ nav {
 
 #imgFeatures {
   width: 50%;
+}
+
+@media (max-width: 1439px) {
+  .divFeat {
+    gap: 5%;
+  }
+  .spanFeatures {
+    font-size: 20px;
+  }
+  .pFeaturesBox {
+    font-size: 14px;
+  }
+  #pFeatures {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  .divFeat {
+    gap: 1%;
+  }
+  #iFeatures {
+    font-size: 25px;
+  }
+  .pFeaturesBox {
+    font-size: 12px;
+  }
+  .spanFeatures {
+    font-size: 15px;
+  }
+  #pFeatures {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  #imgFeatures {
+    order: 0;
+    width: 60%;
+  }
+  .featuresBox {
+    order: 1;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .feat {
+    margin-bottom: 5%;
+  }
+  .divFeat {
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+  }
+}
+.testimonials {
+  height: 700px;
+  background-color: #F9F8FE;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6%;
+}
+
+#h2Testi {
+  width: 3%;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #444444;
+  border-bottom: 3px solid #5846F9;
+}
+
+.tech {
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#h2Tech {
+  margin-top: 3%;
+  margin-left: 5%;
+  color: #444444;
+}
+
+.techButtons {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.techBtn {
+  border: none;
+  border-bottom: 2px solid #B6B6BF;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+}
+.techBtn:hover {
+  border-bottom: 2px solid #D7DCDF;
+  transition: 0.3s;
+}
+
+.techBox {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding-top: 2%;
+}
+
+.techContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.techContentBox {
+  width: 100%;
+  display: flex;
+  gap: 15%;
+}
+
+.techContent {
+  padding-top: 3%;
+  width: 33%;
+  text-align: center;
+}
+
+.imgTech {
+  width: 100%;
+  height: 206px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 3%;
+}
+
+.spanTech {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.pTech {
+  color: #848484;
+}
+
+.subtitleTech {
+  color: #676775;
+  font-size: 15px;
+}
+
+.titleTech {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.pricing {
+  height: 850px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9F8FE;
+}
+
+#h2Pricing {
+  width: 3%;
+  padding-top: 7%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #444444;
+  border-bottom: 3px solid #5846F9;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.switch input {
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #8576FB;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #8576FB;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #8576FB;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.switchSpan {
+  font-weight: bolder;
+  color: #CDCDCD;
+  font-size: 17px;
+}
+
+.switchBox {
+  display: flex;
+  justify-content: flex-start;
+  width: 90%;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.gridPricing {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2%;
+  width: 90%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.topBottomCard {
+  background-color: #F8F8F8;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topBottomCard2 {
+  background-color: #5846F9;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cardPricing {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.centerCard {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spanTopPricing {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2D4964;
+}
+
+.spanTopPricing2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.prix {
+  padding-bottom: 2%;
+  padding-top: 5%;
+}
+
+.pNonIncluded {
+  color: #CDCDCD;
+  text-decoration-line: line-through;
+}
+
+.pPrix {
+  color: #CDCDCD;
+  font-weight: 400;
+}
+
+.spanPrix {
+  color: #5846F9;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+#btnPrice {
+  background: linear-gradient(45deg, rgba(86, 58, 250, 0.9), rgba(116, 15, 214, 0.9));
+  border: none;
+  color: white;
+  padding-top: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+  font-weight: bolder;
+  font-size: 15px;
+}
+#btnPrice:hover {
+  background: linear-gradient(45deg, rgba(116, 15, 214, 0.9), rgba(86, 58, 250, 0.9));
+}
+
+.advanced {
+  background-color: #5846F9;
+  color: white;
+  rotate: 45deg;
+  width: 70%;
+  margin-right: -16%;
+}
+
+.topBottomCard3 {
+  background-color: #F8F8F8;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.spanTopPricing3 {
+  font-weight: 700;
+  font-size: 18px;
+  width: 80%;
+  text-align: end;
+  color: #2D4964;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -26,6 +26,7 @@
     width: 90%
     justify-content: center
     margin-top: 1%
+    padding-bottom: 5%
 
 .feat
     display: flex
@@ -57,5 +58,54 @@
 #imgFeatures
     width: 50%
 
+@media (max-width: 1439px)
+    .divFeat
+        gap: 5%
+
+    .spanFeatures
+        font-size: 20px
+
+    .pFeaturesBox
+        font-size: 14px
+
+    #pFeatures
+        font-size: 14px
+
+@media (max-width: 1023px)
+
+    .divFeat
+        gap: 1%
+
+    #iFeatures
+        font-size: 25px
+
+    .pFeaturesBox
+        font-size: 12px
+
+    .spanFeatures
+        font-size: 15px
+
+    #pFeatures
+        font-size: 12px
+
+@media (max-width: 767px)
+
+    #imgFeatures
+        order: 0
+        width: 60%
+
+    .featuresBox
+        order: 1
+        width: 100%
+        margin-top: 5%
+
+    .feat
+        margin-bottom: 5%
+
+    .divFeat
+        margin-top: 5%
+        flex-direction: column
+        align-items: center
+        gap: 2%
 
 
