@@ -10,13 +10,18 @@ let techContainer = document.querySelectorAll(".techContainer")
 let containerIA = techContainer[0]
 let containerDev = techContainer[1]
 let containerUI = techContainer[2]
-let btnSwitch = document.querySelector(".switch")
+let btnSwitch = document.querySelector(".priceCheck")
 let switchSpan = document.querySelectorAll(".switchSpan")
 let month = switchSpan[0]
 let year = switchSpan[1]
-let prix = document.querySelectorAll("#montantPrix")
+let prix = document.querySelectorAll(".montantPrix")
+let textPrix = document.querySelectorAll(".pPrix")
+let questions = document.querySelectorAll(".question")
+let pQuestionInvisible = document.querySelectorAll(".divInvisible")
+let iDown = document.querySelectorAll(".iQuestion2")
+let iUp = document.querySelectorAll(".iQuestion2UP")
 
-console.log(month, year);
+console.log(month.style.color);
 
 window.addEventListener('scroll', () => {
     navbar.style = "height: 80px; transition:0.8s; background-color: rgba(5, 22, 201, 0.8);"
@@ -77,15 +82,41 @@ btnSwitch.addEventListener('click', () => {
         year.style.color = "rgb(133, 118, 251)"
         month.style.color = "rgb(205, 205, 205)"
         prix.forEach(montant => {
-            montant.innerText = montant.innerText*10
+            let montantAnnee = montant.innerText*10
+            montant.innerHTML = `<i>${montantAnnee}</i>`
         });
-        console.log("true");
+        textPrix.forEach(text => {
+            text.innerText = " / year"
+        });
     } else{
-        console.log("hello");
-        // prix.forEach(montant => {
-        //     montant.innerText = montant.innerText/10
-        // });
+        year.style.color = "rgb(205, 205, 205)"
+        month.style.color = "rgb(133, 118, 251)"
+        prix.forEach(montant => {
+            let montantAnnee = montant.innerText/10
+            montant.innerHTML = `<i>${montantAnnee}</i>`
+        });
+        textPrix.forEach(text => {
+            text.innerText = " / month"
+        });
     }
 })
 
-console.log(year.style.color);
+for (let i = 0; i < questions.length; i++) {
+    questions[i].addEventListener('click', () => {
+        if (pQuestionInvisible[i].style.display == "none") {
+            pQuestionInvisible[i].style = "display: flex"
+            questions[i].style = "height : 170px; transition: 0.5s;"
+            iDown[i].style.display = "none"
+            iUp[i].style.display = "block"
+
+        } else {
+            questions[i].style = "height : 80px; transition: 0.5s;"
+            iDown[i].style.display = "block"
+            iUp[i].style.display = "none"
+            setTimeout(() => {
+                pQuestionInvisible[i].style = "display: none;"
+            },500)
+        }
+    })
+    
+}
