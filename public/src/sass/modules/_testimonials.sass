@@ -1,12 +1,13 @@
 .testimonials
-    height: 700px
+    height: auto
     background-color: #F9F8FE
     display: flex
     align-items: center
     flex-direction: column
     padding-top: 6%
+    padding-bottom: 6%
 
-#h2Testi
+.h2Testi
     width: 3%
     margin-bottom: 0px
     display: flex
@@ -17,3 +18,131 @@
     color: #444444
     border-bottom: 3px solid #5846F9
 
+.carouselTestimonial
+    width: 1400px
+    display: grid
+    grid-auto-flow: column
+    padding-top: 2%
+    padding-bottom: 2%
+    overflow: hidden
+    justify-content: center
+
+.carouselTestimonialContainer
+    // overflow: hidden
+    width: 1450px
+    display: grid
+    grid-auto-flow: column
+    gap: 8%
+    justify-content: center
+    
+
+.testimonialContainer
+    width: 400px
+    display: flex
+    flex-direction: column
+    position: relative
+
+.testiAvatar
+    width: 30%
+    border-radius: 50%
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+    z-index: 1
+    margin-top: -15%
+    background-color: white
+
+
+.temoignage
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px
+    padding-block: 4%
+    padding-inline: 4%
+    padding-bottom: 20%
+    border-radius: 7px
+    z-index: 0
+
+
+.spanTesti
+    font-weight: bolder
+    color: #2D4964
+
+.pTesti
+    font-weight: 500
+    font-size: 13px
+    color: #999999
+
+.iTestiLeft
+    font-size: 30px
+    padding-right: 5%
+
+.iTestiRight
+    font-size: 30px
+    padding-left: 5%
+    display: flex
+    justify-content: flex-end
+
+.pTemoignage 
+    color: #444444
+
+.divBtnCarousel
+    display: flex
+    justify-content: center
+    gap: 10%
+
+.btnCarousel
+    border-radius: 50%
+    border: solid 1px #5846F9
+    background-color: transparent
+    width: 10px
+    height: 13px
+
+.btnActive
+    background-color: #5846F9
+
+
+@media ( max-width: 1440px)
+    .carouselTestimonial
+        width: 1200px
+
+    .carouselTestimonialContainer
+        width: 1250px
+
+    .testimonialContainer
+        width: 350px
+
+@media ( max-width: 1439px)
+
+    .carouselTestimonial
+        width: 900px
+
+    .carouselTestimonialContainer
+        width: 950px
+
+    .testimonialContainer
+        width: 300px
+
+@media ( max-width: 1023px)
+
+    .carouselTestimonial
+        width: 700px
+
+    .carouselTestimonialContainer
+        width: 750px
+
+    .testimonialContainer
+        width: 250px
+
+    .pTemoignage
+        font-size: 13px
+
+@media ( max-width: 767px)
+
+    .carouselTestimonial
+        width: 400px
+
+    .carouselTestimonialContainer
+        width: 450px
+
+    .testimonialContainer
+        width: 150px
+
+    .pTemoignage
+        font-size: 12px

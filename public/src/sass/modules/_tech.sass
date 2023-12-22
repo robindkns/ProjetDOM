@@ -4,7 +4,7 @@
     justify-content: center
     flex-direction: column
     
-#h2Tech
+.h2Tech
     margin-top: 3%
     margin-left: 5%
     color: #444444
@@ -38,6 +38,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    animation: appear 0.3s ease-in-out forwards
 
 .techContentBox
     width: 100%
@@ -72,6 +73,19 @@
     font-weight: bold
     font-size: 40px
 
+.activeTech
+    border-bottom: 2px solid black
+    transition: 0.3s
+
+.inactiveTech
+    border-bottom: 2px solid #B6B6BF
+    transition: 0.3s
+
+@keyframes appear
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 
 @media (max-width: 1024px)
 

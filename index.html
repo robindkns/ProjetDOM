@@ -8,23 +8,54 @@
 </head>
 <body>
     <nav class="py-1 fixed-top">
-        <span id="spanNav">MOLENGEEK</span>
-        <div class="navDiv">
-            <ul class="navUL">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Drop Down</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <button id="btnNav">Get Started</button>
+        <div class="firstRowNav">
+            <span id="spanNav">MOLENGEEK</span>
+            <div class="navDiv">
+                <ul class="navUL">
+                    <li><a href="#home" class="activeNav">Home</a></li>
+                    <li><a href="#about" class="inactiveNav">About</a></li>
+                    <li><a href="#services" class="inactiveNav">Services</a></li>
+                    <li>
+                        <div class="inactiveNav dropDown">
+                            <span class="spanDropDown">Drop Down <i class="fa-solid fa-chevron-down iDrop"></i></span>
+                            <div class="dropDownContent">
+                                <a href="#" class="aDropDown">Link 1</a>
+                                <a href="#" class="aDropDown">Link 2</a>
+                                <a href="#" class="aDropDown">Link 3</a>
+                                <a href="#" class="aDropDown">Link 4</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#contact" class="inactiveNav">Contact</a></li>
+                </ul>
+                <button id="btnNav">Dark Mode <i class="fa-solid fa-circle-half-stroke"></i></button>
+                <div class="btnBurger"><i class="fa-solid fa-bars"></i></div>
+            </div>
         </div>
-        
+        <div class="rowBurger">
+            <ul class="navULBurger">
+                <li><a href="#home" class="activeNav">Home</a></li>
+                <li><a href="#about" class="inactiveNav">About</a></li>
+                <li><a href="#services" class="inactiveNav">Services</a></li>
+                <li>
+                    <div class="inactiveNav dropDown">
+                        <span class="spanDropDown">Drop Down <i class="fa-solid fa-chevron-down iDrop"></i></span>
+                        <div class="dropDownContent">
+                            <a href="#" class="aDropDown">Link 1</a>
+                            <a href="#" class="aDropDown">Link 2</a>
+                            <a href="#" class="aDropDown">Link 3</a>
+                            <a href="#" class="aDropDown">Link 4</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact" class="inactiveNav">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <header>
+    <header id="home">
         <div class="headerContainer">
             <div class="divContainerHeader">
-                <p>
+                <p class="pContainer">
                     Better Digital Experience With Coding School
                 </p>
                 <button id="btnContainer">Get Started</button>
@@ -32,7 +63,7 @@
             <img src="./public/img/hero-img.png" alt="imgHeader" class="imgHeader">
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="about">
         <div class="divAbout">
             <div class="txtAbout">
                 <h2 id="h2About">Voluptatem dignissimos provident quasi corporis</h2>
@@ -65,8 +96,8 @@
             <p id="pNumbers">Hard Workers</p>
         </div>
     </section>
-    <section class="services">
-        <h2 id="h2Service">SERVICES</h2>
+    <section class="services" id="services">
+        <h2 class="h2Service">SERVICES</h2>
         <p id="pService">Magnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div class="gridService">
             <div class="service">
@@ -102,7 +133,7 @@
         </div>
     </section>
     <section class="features">
-        <h2 id="h2Features">FEATURES</h2>
+        <h2 class="h2Features">FEATURES</h2>
         <p id="pFeatures">Maagnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div class="divFeat">
             <div class="featuresBox">
@@ -139,15 +170,78 @@
         </div>
     </section>
     <section class="testimonials">
-        <h2 id="h2Testi">TESTIMONIALS</h2>
+        <h2 class="h2Testi">TESTIMONIALS</h2>
         <p id="pFeatures">Maagnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="carouselTestimonial">
+            <div class="carouselTestimonialContainer">
+                <div class="testimonialContainer">
+                    <div class="temoignage">
+                        <i class="fa-solid fa-quote-left iTestiLeft" style="color: #B1A9FC;"></i><i class="pTemoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta tempore iste aperiam, inventore fuga exercitationem alias saepe sit, accusamus labore. Expedita aut tempora placeat.</i><i class="fa-solid fa-quote-right iTestiRight" style="color: #B1A9FC;"></i>
+                    </div>
+                    <div>
+                        <span class="divAvatar"><img class="testiAvatar" src="./public/img/avatarTesti.png" alt="avatarTestimonial"></span>
+                    </div>
+                    <div>
+                        <span class="spanTesti">Saul Goodman</span>
+                        <p class="pTesti">CEO & Founder</p>
+                    </div>
+                </div>
+                <div class="testimonialContainer">
+                    <div class="temoignage">
+                        <i class="fa-solid fa-quote-left iTestiLeft" style="color: #B1A9FC;"></i><i class="pTemoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta tempore iste aperiam, inventore fuga exercitationem alias saepe sit, accusamus labore. Expedita aut tempora placeat.</i><i class="fa-solid fa-quote-right iTestiRight" style="color: #B1A9FC;"></i>
+                    </div>
+                    <div><img class="testiAvatar" src="./public/img/avatarTesti.png" alt="avatarTestimonial"></div>
+                    <div>
+                        <span class="spanTesti">Sara Wilsson</span>
+                        <p class="pTesti">Designer</p>
+                    </div>
+                </div>
+                <div class="testimonialContainer">
+                    <div class="temoignage">
+                        <i class="fa-solid fa-quote-left iTestiLeft" style="color: #B1A9FC;"></i><i class="pTemoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta tempore iste aperiam, inventore fuga exercitationem alias saepe sit, accusamus labore. Expedita aut tempora placeat.</i><i class="fa-solid fa-quote-right iTestiRight" style="color: #B1A9FC;"></i>
+                    </div>
+                    <div>
+                        <img class="testiAvatar" src="./public/img/avatarTesti.png" alt="avatarTestimonial">
+                    </div>
+                    <div>
+                        <span class="spanTesti">Jena Karlis</span>
+                        <p class="pTesti">Store Owner</p>
+                    </div>
+                </div>
+                <div class="testimonialContainer">
+                    <div class="temoignage">
+                        <i class="fa-solid fa-quote-left iTestiLeft" style="color: #B1A9FC;"></i><i class="pTemoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta tempore iste aperiam, inventore fuga exercitationem alias saepe sit, accusamus labore. Expedita aut tempora placeat.</i><i class="fa-solid fa-quote-right iTestiRight" style="color: #B1A9FC;"></i>
+                    </div>
+                    <div><img class="testiAvatar" src="./public/img/avatarTesti.png" alt="avatarTestimonial"></div>
+                    <div>
+                        <span class="spanTesti">Matt Brandon</span>
+                        <p class="pTesti">Freelancer</p>
+                    </div>
+                </div>
+                <div class="testimonialContainer">
+                    <div class="temoignage">
+                        <i class="fa-solid fa-quote-left iTestiLeft" style="color: #B1A9FC;"></i><i class="pTemoignage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta tempore iste aperiam, inventore fuga exercitationem alias saepe sit, accusamus labore. Expedita aut tempora placeat.</i><i class="fa-solid fa-quote-right iTestiRight" style="color: #B1A9FC;"></i>
+                    </div>
+                    <div>
+                        <img class="testiAvatar" src="./public/img/avatarTesti.png" alt="avatarTestimonial">
+                    </div>
+                    <div>
+                        <span class="spanTesti">John Larson</span>
+                        <p class="pTesti">Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divBtnCarousel">
+            <button class="btnCarousel btnInactive"></button><button class="btnCarousel btnInactive"></button><button class="btnCarousel btnActive"></button><button class="btnCarousel btnInactive"></button><button class="btnCarousel btnInactive"></button>
+        </div>
     </section>
     <section class="tech">
-        <h2 id="h2Tech">Current Tech</h2>
+        <h2 class="h2Tech">Current Tech</h2>
         <div class="techButtons">
-            <button class="techBtn">IA</button>
-            <button class="techBtn">DEV</button>
-            <button class="techBtn">UI/UX</button>
+            <button class="techBtn activeTech">IA</button>
+            <button class="techBtn inactiveTech">DEV</button>
+            <button class="techBtn inactiveTech">UI/UX</button>
         </div>
         <div class="techBox">
             <div class="techContainer">
@@ -217,7 +311,7 @@
         </div>
     </section>
     <section class="pricing">
-        <h2 id="h2Pricing">PRICING</h2>
+        <h2 class="h2Pricing">PRICING</h2>
         <p id="pFeatures">Maagnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div class="switchBox">
             <span class="switchSpan" style="color: #8576FB;">Month</span>
@@ -303,15 +397,15 @@
         </div>
     </section>
     <section class="faq">
-        <h2 id="h2Faq">F.A.Q</h2>
+        <h2 class="h2Faq">F.A.Q</h2>
         <p class="pFaq">Maagnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div class="questionBox">
             <div class="question">
                 <div class="divVisible">
                     <i class="fa-regular fa-circle-question iQuestion" style="color: #8576FB;"></i>
-                    <p class="pQuestion">Non consectetur a erat nam at lectus urna duis?</p>
+                    <p class="pQuestion questionInactive">Non consectetur a erat nam at lectus urna duis?</p>
                     <i class="fa-solid fa-chevron-down iQuestion2" style="color: #2D4964;"></i>
-                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #2D4964; display: none;"></i>
+                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #5846F9; display: none;"></i>
                 </div>
                 <div class="divInvisible" style="display: none;">
                     <p class="pInvisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore laboriosam exercitationem soluta placeat expedita veniam autem iste enim repellendus praesentium possimus eius, nulla nobis.</p>
@@ -321,9 +415,9 @@
             <div class="question">
                 <div class="divVisible">
                     <i class="fa-regular fa-circle-question iQuestion" style="color: #8576FB;"></i>
-                    <p class="pQuestion">Feugiat scelerisque varius morbi enim nunc?</p>
+                    <p class="pQuestion questionInactive">Feugiat scelerisque varius morbi enim nunc?</p>
                     <i class="fa-solid fa-chevron-down iQuestion2" style="color: #2D4964;"></i>
-                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #2D4964; display: none;"></i>
+                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #5846F9; display: none;"></i>
                 </div>
                 <div class="divInvisible" style="display: none;">
                     <p class="pInvisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore laboriosam exercitationem soluta placeat expedita veniam autem iste enim repellendus praesentium possimus eius, nulla nobis.</p>
@@ -333,9 +427,9 @@
             <div class="question">
                 <div class="divVisible">
                     <i class="fa-regular fa-circle-question iQuestion" style="color: #8576FB;"></i>
-                    <p class="pQuestion">Dolor sit amet consectetur adipisicing elit?</p>
+                    <p class="pQuestion questionInactive">Dolor sit amet consectetur adipisicing elit?</p>
                     <i class="fa-solid fa-chevron-down iQuestion2" style="color: #2D4964;"></i>
-                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #2D4964; display: none;"></i>
+                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #5846F9; display: none;"></i>
                 </div>
                 <div class="divInvisible" style="display: none;">
                     <p class="pInvisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore laboriosam exercitationem soluta placeat expedita veniam autem iste enim repellendus praesentium possimus eius, nulla nobis.</p>
@@ -344,9 +438,9 @@
             <div class="question">
                 <div class="divVisible">
                     <i class="fa-regular fa-circle-question iQuestion" style="color: #8576FB;"></i>
-                    <p class="pQuestion">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</p>
+                    <p class="pQuestion questionInactive">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</p>
                     <i class="fa-solid fa-chevron-down iQuestion2" style="color: #2D4964;"></i>
-                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #2D4964; display: none;"></i>
+                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #5846F9; display: none;"></i>
                 </div>
                 <div class="divInvisible" style="display: none;">
                     <p class="pInvisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore laboriosam exercitationem soluta placeat expedita veniam autem iste enim repellendus praesentium possimus eius, nulla nobis.</p>
@@ -355,9 +449,9 @@
             <div class="question">
                 <div class="divVisible">
                     <i class="fa-regular fa-circle-question iQuestion" style="color: #8576FB;"></i>
-                    <p class="pQuestion">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</p>
+                    <p class="pQuestion questionInactive">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor?</p>
                     <i class="fa-solid fa-chevron-down iQuestion2" style="color: #2D4964;"></i>
-                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #2D4964; display: none;"></i>
+                    <i class="fa-solid fa-chevron-up iQuestion2UP" style="color: #5846F9; display: none;"></i>
                 </div>
                 <div class="divInvisible" style="display: none;">
                     <p class="pInvisible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempore laboriosam exercitationem soluta placeat expedita veniam autem iste enim repellendus praesentium possimus eius, nulla nobis.</p>
@@ -366,8 +460,8 @@
         </div>
         
     </section>
-    <section class="contact">
-        <h2 id="h2Contact">CONTACT</h2>
+    <section class="contact" id="contact">
+        <h2 class="h2Contact">CONTACT</h2>
         <p class="pContact">Maagnam dolores commodi suscipit. Necessitabus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         <div class="contactFirstRow">
             <div class="contactAddress">
@@ -464,6 +558,7 @@
 
         </div>
     </footer>
+    <div id="ArrowUp"><i class="fa-solid fa-arrow-up iArrow"></i></div>
     <script src="./public/js/main.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
