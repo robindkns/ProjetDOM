@@ -35,7 +35,7 @@ let sectionService = document.querySelector('.services')
 let sectionTestimonials = document.querySelector('.testimonials')
 let sectionPricing = document.querySelector('.pricing')
 let footer = document.querySelector('.gridFooter')
-let ulFooter = document.querySelectorAll('.aFooter')
+let ulFooter = document.querySelectorAll('.ulFooter')
 let containerHeader = document.querySelector('.pContainer')
 let h2About = document.querySelector('.h2About')
 let h2Service = document.querySelector('.h2Service')
@@ -45,6 +45,7 @@ let h2Testimonial = document.querySelector('.h2Testi')
 let h2Tech = document.querySelector('.h2Tech')
 let h2Pricing = document.querySelector('.h2Pricing')
 let h2Contact = document.querySelector('.h2Contact')
+let header = document.querySelector('header')
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -230,33 +231,39 @@ btnBurger.addEventListener('click', () => {
     }
 })
 
-btnDarkMode.addEventListener('click', () => {
-    if (body.style.backgroundColor == "black") {
-        body.style.backgroundColor = "white"
-        body.style.color = "black"
-        footer.style.color = "white"
-        sectionPricing.style.backgroundColor = "#F9F8FE"
-        sectionService.style.backgroundColor = "#F9F8FE"
-        sectionTestimonials.style.backgroundColor = "#F9F8FE"
-        ulFooter.style.color = "white"
-        navbar.style.color = "white"
-        containerHeader.style.color = "white"
-    } else {
-        body.style = "background-color: black; color: white;"
-        footer.style.color = "black"
-        sectionPricing.style.backgroundColor = "#121212"
-        sectionService.style.backgroundColor = "#121212"
-        sectionTestimonials.style.backgroundColor = "#121212"
-        ulFooter.style.color = "black"
-        navbar.style.color = "black"
-        containerHeader.style.color = "black"
-        h2About.style.color = "white"
-        h2Service.style.color = "white"
-        h2Features.style.color = "white"
-        h2Testimonial.style.color = "white"
-        h2Tech.style.color = "white"
-        h2Pricing.style.color = "white"
-        h2Contact.style.color = "white"
-        pService.style.color = "white"
-    }
-})
+// btnDarkMode.addEventListener('click', () => {
+//     if (body.style.backgroundColor == "black") {
+//         body.style.backgroundColor = "white"
+//         body.style.color = "black"
+//         footer.style.color = "white"
+//         sectionPricing.style.backgroundColor = "#F9F8FE"
+//         sectionService.style.backgroundColor = "#F9F8FE"
+//         sectionTestimonials.style.backgroundColor = "#F9F8FE"
+//         ulFooter.style.color = "white"
+//         navbar.style.color = "white"
+//         containerHeader.style.color = "white"
+//     } else {
+//         header.classList = "header"
+//         body.style = "background-color: black;"
+//         footer.style.color = "black"
+//         sectionPricing.style.backgroundColor = "#121212"
+//         sectionService.style.backgroundColor = "#121212"
+//         sectionTestimonials.style.backgroundColor = "#121212"
+//         // ulFooter.style.color = "black"
+//         navbar.style.color = "black"
+//         containerHeader.style.color = "black"
+//         h2About.style.color = "white"
+//         h2Service.style.color = "white"
+//         h2Features.style.color = "white"
+//         h2Testimonial.style.color = "white"
+//         h2Tech.style.color = "white"
+//         h2Pricing.style.color = "white"
+//         h2Contact.style.color = "white"
+//         pService.style.color = "white"
+//         btnDev.style.color = "white"
+//         btnUI.style.color = "white"
+//         btnIA.style.color = "white"
+        
+//         console.log(header);
+//     }
+// })

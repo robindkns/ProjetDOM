@@ -22299,6 +22299,14 @@ header {
   height: 800px;
 }
 
+.header {
+  background: linear-gradient(45deg, rgba(52, 36, 143, 0.9) 0%, rgba(70, 13, 126, 0.9) 100%), url(../img/hero-bg.jpg) center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  height: 800px;
+}
+
 nav {
   background-color: transparent;
   position: absolute;
